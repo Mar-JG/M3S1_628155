@@ -4,50 +4,51 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Tienda Demo</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body style="margin:0; font-family: Arial, sans-serif;">
+<body>
 
-  <header style="background:#0d6efd; color:white; padding:16px;">
-    <h1 id="site-title" style="margin:0; font-size:28px;">Tienda Demo</h1>
+  <header>
+    <h1 id="site-title">Tienda Demo</h1>
     <nav>
-      <a href="#home" style="color:white; text-decoration:none; margin-right:12px;">Inicio</a>
-      <a href="#productos" style="color:white; text-decoration:none; margin-right:12px;">Productos</a>
-      <a href="#contacto" style="color:white; text-decoration:none;">Contacto</a>
+      <a href="#home" class="navLink">Inicio</a>
+      <a href="#productos" class="navLink">Productos</a>
+      <a href="#contacto"class="navLink">Contacto</a>
     </nav>
   </header>
 
-  <main style="padding:16px;">
-    <section id="home" style="margin-bottom:24px;">
-      <h2 style="margin:0 0 8px 0; font-size:24px;">Bienvenido</h2>
-      <p style="color:#555; line-height:1.5;">
+  <main>
+    <section id="home">
+      <h2>Bienvenido</h2>
+      <p>
         Esta es una tienda de ejemplo. Explora nuestros productos destacados.
       </p>
-      <button style="background:#198754; color:white; border:none; padding:10px 16px; border-radius:6px; cursor:pointer;">
+      <button>
         Ver ofertas
       </button>
     </section>
 
-    <section id="productos" style="display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-bottom:24px;">
-      <article style="border:1px solid #ddd; border-radius:8px; padding:12px;">
-        <h3 style="margin:0 0 8px 0;">Camiseta</h3>
-        <p style="color:#666; margin:0 0 12px 0;">Algodón 100%, varias tallas.</p>
-        <span style="display:inline-block; background:#ffeeba; color:#664d03; padding:4px 8px; border-radius:4px;">$199</span>
+    <section id="productos">
+      <article>
+        <h3>Camiseta</h3>
+        <p class="desc">Algodón 100%, varias tallas.</p>
+        <span>$199</span>
       </article>
 
-      <article style="border:1px solid #ddd; border-radius:8px; padding:12px;">
-        <h3 style="margin:0 0 8px 0;">Sudadera</h3>
-        <p style="color:#666; margin:0 0 12px 0;">Comoda y abrigadora.</p>
-        <span style="display:inline-block; background:#ffeeba; color:#664d03; padding:4px 8px; border-radius:4px;">$399</span>
+      <article>
+        <h3>Sudadera</h3>
+        <p class="desc">Comoda y abrigadora.</p>
+        <span>$399</span>
       </article>
     </section>
 
-    <section id="contacto" style="margin-bottom:24px;">
-      <h2 style="margin:0 0 8px 0; font-size:24px;">Contacto</h2>
-      <a href="mailto:info@tienda.demo" style="color:#0d6efd; text-decoration:underline;">Escríbenos</a>
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <a href="mailto:info@tienda.demo">Escríbenos</a>
     </section>
   </main>
 
-  <footer style="background:#f8f9fa; color:#333; text-align:center; padding:12px;">
+  <footer>
     <small>&copy; 2025 Tienda Demo</small>
   </footer>
 </body>
