@@ -1,17 +1,19 @@
+main {
+    padding:16px;
+}
+
 body{
     margin:0; font-family: Arial, sans-serif;
 }
-
-h1 {
-color:white;
-margin: 0;
-font-size:28px;}
-
 
 header {
     background:#0d6efd;
     color:white;
     padding:16px;
+}
+
+article{
+    border:1px solid #ddd; border-radius:8px; padding:12px;
 }
 
 p {
@@ -24,16 +26,18 @@ a {
     text-decoration:underline;
 }
 
-article{
-    border:1px solid #ddd; border-radius:8px; padding:12px;
-}
-
-main {
-    padding:16px;
-}
-
 footer {
     background:#f8f9fa; color:#333; text-align:center; padding:12px;
+}
+
+section{
+    margin-bottom:24px;
+    /*A pesar de que hay IDs individuales para todas las diferentes secciones, todos comparten el mismo margin-bottom de 24px, por lo que se puso como diseño de todas las secciones. Si se llega a ocupar un cambio en específico, se puede hacer más abajo para reemplazar o añadir a este diseño, como es en el caso de "productos".*/
+}
+
+h2 {
+    margin:0 0 8px 0;
+    font-size:24px;
 }
 
 h3 {
@@ -53,11 +57,7 @@ button {
     cursor:pointer;
 }
 
-
-h2 {
-    margin:0 0 8px 0;
-    font-size:24px;
-}
+/*Más específico: clases e IDs.*/
 
 .navLink {
     color:white;
@@ -66,22 +66,18 @@ h2 {
 }
 
 .desc{
+    /* "desc" es una clase creada para las descripciones de los productos, así pueden tener un formato específico sin interferir con otros textos. Se hizo clase en vez de ID ya que es algo que se repite varias veces, y de manera realista se podría repetir en el futuro.*/
     color:#666;
     margin:0 0 12px 0;
     line-height:1;
 }
-    
 
-
-
-#home{
-    margin-bottom:24px;
-}
-
-#contacto{
-    margin-bottom:24px;
+#site-title{
+    color:white;
+    margin: 0;
+    font-size:28px;
 }
 
 #productos{
-    display:grid; grid-template-columns: 1fr 1fr; gap:16px; margin-bottom:24px;
+    display:grid; grid-template-columns: 1fr 1fr; gap:16px;
 }
